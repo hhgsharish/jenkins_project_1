@@ -1,13 +1,10 @@
 pipeline {   
-    agent any 
+    agent { label 'slave' } 
     tools{
         jdk 'jdk11'
         maven 'maven3'node('dev')
 }
-    node('dev') {
-    // some block
-}
-        
+ 
     }
 
     stages {
