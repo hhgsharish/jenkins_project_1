@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Git checkout') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/jaiswaladi246/springboot-java-poject.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/hhgsharish/jenkins_project_1.git'
             }
         }
         
