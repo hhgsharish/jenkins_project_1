@@ -1,11 +1,11 @@
 pipeline {   
     agent { label 'slave' } 
     tools{
-        jdk 'jdk11'
+        jdk 'jdk17'
         maven 'maven3'node('dev')
-}
+		}
  
-    }
+    	
 
     stages {
         stage('Git checkout') {
